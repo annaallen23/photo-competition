@@ -18,8 +18,9 @@
 }
 
 .navbar {
-  background-color: #DDDDDD;
+  background-color: powderblue;
   height: 64px;
+  width: 100%;
 }
 
 .navbar-list {
@@ -38,7 +39,16 @@ body {
 
 .main-content {
   width: 100%;
-  max-width: 800px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 24px;
+}
+body {
+  background-color: #d8f0f3;
+font-family: 'Amiri', cursive;
+}
+img {
+  border-style: solid;
+  border-width: thin;
+  border-color: black;
 }
