@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <!-- Essential meta tags -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -25,18 +26,22 @@
 <body>
 
 <!-- Navigation bar -->
-<nav class="navbar main-content">
-    <ul class="navbar-list">
-        <li class="navbar-item"><a class="navbar-title" href="index.html">Photo Competition</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="topImage.html">Top Rated Image</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
-    </ul>
-</nav>
+<div><!-- Navigation bar -->
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a class="navbar-logo" href="index.html"></a></li>
+            <li class="navbar-item"><a class="navbar-link" href="thumbnails.html">View all Images</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="topImage.html">Winning Image</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="uploadImage.html">Click here to enter your image!</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
+        </ul>
+    </nav>
+</div>
 
 <!-- Page content -->
 <div class="main-content">
     <h1 class="page-title">Top Rated Image</h1>
-
+    <div class="responsive">
     <div class="image-container">
         <!-- src and alt attribute will be populated by index.js on page load -->
         <img id="main-image" src="">
@@ -59,6 +64,6 @@
         </tbody>
     </table>
 </div>
-
+</div>
 </body>
 </html>

@@ -1,5 +1,5 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <!-- Essential meta tags -->
@@ -9,23 +9,21 @@
     <meta name="author" content="Softwire">
 
     <!-- Title -->
-    <title>Photo Competition - Home</title>
+    <title>Photo Competition - About</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../stylesheets/common.css">
-
 
     <!-- Vendor JS -->
     <script src="../js/vendor/jquery-3.3.1.js"></script>
 
     <!-- Custom JS -->
     <script src="../js/common.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../js/thumbnails.js"></script>
+
 
 </head>
-
 <body>
-
 
 <!-- Navigation bar -->
 <div><!-- Navigation bar -->
@@ -42,37 +40,23 @@
 
 <!-- Page content -->
 <div class="main-content">
-    <h1 class="page-title">Vote here!</h1>
+    <h1 class="page-title">All Images</h1>
     <div class="responsive">
-        <div class="voting-buttons">
-            <button class="voting-button vote-up" onclick="upVote()">I love it</button>
-            <button class="voting-button vote-down" onclick="downVote()">I hate it</button>
-            <button><a href="javascript:location.reload(true)">Next Image</a></button>
-        </div>
-    <div class="image-container">
-        <!-- src and alt attribute will be populated by index.js on page load -->
-        <img id="main-image" src="">
-    </div>
-    <noscript><h4>You do not have Javascript, images will not be displayed.</h4></noscript>
+        <noscript><h4>You do not have Javascript, images will not be displayed.</h4></noscript>
+        <table>
+            <thead>
+                <tr>
+                    <td>Preview</td>
+                    <td>Author</td>
+                    <td>Title</td>
+                    <td>Licence</td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
 
-    <table class="image-details">
-        <tbody>
-            <tr>
-                <td><b>Author</b></td>
-                <td id="author"></td>
-            </tr>
-            <tr>
-                <td><b>Name</b></td>
-                <td id="name"></td>
-            </tr>
-            <tr>
-                <td><b>Licence</b></td>
-                <td id="licence"></td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</div>
+            </tbody>
+        </table>
+    </div>
 </div>
 </body>
 </html>
